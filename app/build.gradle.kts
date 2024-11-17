@@ -21,12 +21,12 @@ plugins {
 
 android {
     namespace = "com.example.bluromatic"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.bluromatic"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -85,4 +85,7 @@ dependencies {
     implementation("androidx.work:work-runtime-ktx:2.8.1")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation("androidx.compose.ui:ui-tooling")
+
+    // WorkManager dependency
+    implementation("androidx.work:work-runtime-ktx:2.10.0")
 }
